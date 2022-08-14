@@ -1,8 +1,8 @@
-version: '2'
+version: '3.87'
 services:
   db:
     image: mongo:latest
+    volumes:
+      - ./mongo:/data/db
     ports:
-      -"8069:27017"
-    container_name: db
-    volumes: ./mongo/data:/data/db
+      - 8069:27017
