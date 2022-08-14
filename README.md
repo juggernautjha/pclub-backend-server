@@ -29,6 +29,6 @@ The server allows 5 operations,
 The API enpoint is **/create_entry**. The request type is **POST**.
 The request body is JSON.
 It returns the _id of inserted record.
-<p align="center"><img src="images/postman-add.png" width="500"></p>
+<p align="center"><img src="images/add-postman.png" width="500"></p>
 
 
