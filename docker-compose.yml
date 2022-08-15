@@ -1,8 +1,17 @@
 version: '3.87'
 services:
-  db:
+  mongodb:
     image: mongo:latest
     volumes:
       - ./mongo:/data/db
     ports:
-      - 8069:27017
+      - 27017:27017
+
+  backend:
+    build: ./backend
+    ports:
+      - 12345:12345
+    depends_on:
+      - mongodb
+    
+    

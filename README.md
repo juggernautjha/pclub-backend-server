@@ -11,20 +11,11 @@ According to me, this was the most interesting task. That is chiefly because I c
 
 -------------------------
 ### Setup
-The backend server requires a database. I have used mongoDB because that is another thing I wanted to learn, and I am not a boomer to use SQL. To spin up the database, run
+The backend server requires a database. I have used mongoDB because that is another thing I wanted to learn, and I am not a boomer to use SQL. To spin up the backend server, run
 ```bash
 docker-compose up
 ```
-
-Port 8069 is the port local machine can access mongodb at. 
-
-To run the server, 
-```bash
-cd backend
-go build 
-./backend-api
-```
-The server listens on port 12345.
+As simple as that! Now you can make requests on port 12345. 
 
 -------------------------
 ### Usage
