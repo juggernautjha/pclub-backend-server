@@ -181,7 +181,7 @@ func main() {
 	// fmt.Println("Rahhul Best")
 	ctx, cancel := context.WithTimeout(context.Background(), 12*time.Second)
 	defer cancel()
-	client, _ = mongo.Connect(ctx, options.Client().ApplyURI("mongodb://localhost:8069"))
+	client, _ = mongo.Connect(ctx, options.Client().ApplyURI("mongodb://mongodb:27017"))
 	// fmt.Println("Rahhul Best")
 	router := mux.NewRouter()
 	router.HandleFunc("/create_record", add_student).Methods("POST")
